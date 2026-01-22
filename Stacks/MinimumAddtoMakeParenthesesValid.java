@@ -27,6 +27,7 @@ public class MinimumAddtoMakeParenthesesValid {
         System.out.println(minAddToMakeValid("())"));
         System.out.println(minAddToMakeValid2("())"));
     }
+
     // using stack
     private static int minAddToMakeValid(String s) {
         Stack<Character> stack = new Stack<>();
@@ -39,7 +40,7 @@ public class MinimumAddtoMakeParenthesesValid {
         }
         return stack.size();
     }
-    
+
     private static int minAddToMakeValid2(String s) {
         int n = 0;
         for (Character c : s.toCharArray()) {
