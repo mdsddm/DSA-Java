@@ -60,7 +60,41 @@ A comprehensive collection of Data Structures and Algorithms implementations in 
 
 ```
 DSA-Java/
-├── src/              # Source code organized by topic
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/
+│               └── ms/
+│                   ├── dsa/                    # Data Structures & Algorithms
+│                   │   ├── array/
+│                   │   ├── arraylist/
+│                   │   ├── binarysearch/
+│                   │   ├── binarytree/
+│                   │   ├── bst/
+│                   │   ├── dynamicprogramming/
+│                   │   ├── graph/
+│                   │   ├── greedyalgorithm/
+│                   │   ├── hashing/
+│                   │   ├── heap/
+│                   │   ├── linkedlist/
+│                   │   ├── queue/
+│                   │   ├── recursionbacktracking/
+│                   │   ├── stack/
+│                   │   ├── string/
+│                   │   ├── tries/
+│                   │   └── twopointeralgorithm/
+│                   ├── corejava/               # Core Java Concepts
+│                   │   ├── collection/
+│                   │   ├── exceptionhandling/
+│                   │   ├── genericprogramming/
+│                   │   ├── guiprogramming/
+│                   │   ├── multithread/
+│                   │   ├── packagetester/
+│                   │   ├── passwordgenerator/
+│                   │   └── stringmanipulation/
+│                   └── collectionframework/    # Collection Framework Examples
+│                       ├── list/
+│                       └── set/
 ├── bin/              # Compiled class files
 ├── lib/              # External dependencies
 └── README.md         # Project documentation
@@ -70,15 +104,24 @@ DSA-Java/
 
 ### Prerequisites
 - Java Development Kit (JDK) 8 or higher
-- VS Code with Java Extension Pack
+- VS Code with Java Extension Pack (recommended) or any Java IDE
+
+### Package Structure
+All Java files follow the package naming convention:
+- **DSA**: `com.ms.dsa.<topic>`
+- **Core Java**: `com.ms.corejava.<topic>`
+- **Collection Framework**: `com.ms.collectionframework.<topic>`
 
 ### Running Programs
-1. Navigate to the specific topic folder in `src/`
+1. Navigate to the specific topic folder in `src/main/java/com/ms/`
 2. Open the Java file you want to run
 3. Use VS Code's built-in Java runner or compile and run from terminal:
    ```bash
-   javac src/<topic>/<FileName>.java -d bin
-   java -cp bin <topic>.<FileName>
+   # Compile
+   javac -d bin src/main/java/com/ms/dsa/array/BuyAndShellStock.java
+
+   # Run
+   java -cp bin com.ms.dsa.array.BuyAndShellStock
    ```
 
 ## 📝 Usage
